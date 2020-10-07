@@ -2,9 +2,15 @@
     "name": "git-rebase-syntax",
     "displayName": "git-rebase-syntax",
     "description": "Syntax for git rebase interactive",
+    "publisher": "perrinjerome",
+    "license": "MIT",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.49.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/perrinjerome/git-rebase-syntax"
     },
     "categories": [
         "Programming Languages"
@@ -13,7 +19,7 @@
         "languages": [{
             "id": "git-rebase",
             "aliases": ["Git Rebase Message", "git-rebase"],
-            "extensions": [".git-rebase-todo"],
+            "extensions": ["git-rebase-todo"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
