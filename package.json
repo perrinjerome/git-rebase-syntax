@@ -1,0 +1,25 @@
+{
+    "name": "git-rebase-syntax",
+    "displayName": "git-rebase-syntax",
+    "description": "Syntax for git rebase interactive",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "git-rebase",
+            "aliases": ["Git Rebase Message", "git-rebase"],
+            "extensions": [".git-rebase-todo"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "git-rebase",
+            "scopeName": "text.git-rebase",
+            "path": "./syntaxes/git-rebase.tmLanguage"
+        }]
+    }
+}
